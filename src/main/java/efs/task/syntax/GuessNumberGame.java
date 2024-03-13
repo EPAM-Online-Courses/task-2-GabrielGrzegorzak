@@ -98,6 +98,7 @@ public class GuessNumberGame {
         System.out.println(printString);
     }
 
+
     public double calculateLives(int argumentM)
     {
         return Math.floor(customLog(2, argumentM)) + 1;
