@@ -49,7 +49,7 @@ public class GuessNumberGame {
         int guess = 0;
         boolean guessed = false;
 
-        do
+        while(lives > fails)
         {
             printLives(lives, fails);
             System.out.println(UsefulConstants.GIVE_ME);
@@ -77,7 +77,7 @@ public class GuessNumberGame {
                 guessed = true;
                 break;
             }
-        }while(lives > fails);
+        }
 
         if(guessed)
         {
